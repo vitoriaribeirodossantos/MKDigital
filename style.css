@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap");
+
+/*  Variaveis */
+:root {
+  --blue-900: #07346f;
+  --blue-800: #0a3d84;
+  --blue-600: #1f5aa6;
+  --blue-100: #e9f0fb;
+  --blue-50: #f3f7fd;
+  --yellow: #ffe066;
+  --yellow-hover: #ffd633;
+  --text: #1a2233;
+  --text-soft: #4a5568;
+  --white: #ffffff;
+  --gray-field: #dcdcdc;
+
+  --font-title: "DM Serif Display", Georgia, serif;
+  --font-label: "Montserrat", sans-serif;
+  --font-body: "Inter", "Montserrat", sans-serif;
+
+  --radius: 8px;
+  --shadow: 0 2px 10px rgba(7, 52, 111, 0.08);
+  --container: 1180px;
+}
+
+/*  Reset  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 35%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/*  Tipografia comum  */
+.section-label {
+  display: block;
+  font-family: var(--font-label);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--blue-600);
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  line-height: 1.2;
+  color: var(--text);
+}
+
+/* Botao  */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: var(--blue-900);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--yellow-hover);
+  transform: translateY(-1px);
+}
+
+/*  Logo e menu */
+.logo {
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+  color: #f3c13a;
+}
+
+.logo span {
+  color: var(--white);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.menu a {
+  font-family: var(--font-label);
+  font-size: 1.05rem;
+  color: var(--white);
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  border-color: var(--white);
+}
+
+/*  Hero  */
+.hero {
+  position: relative;
+  min-height: 460px;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, var(--blue-900) 30%, rgba(7, 52, 111, 0.55) 65%, rgba(7, 52, 111, 0.15) 100%),
+    url("imagens/foto1.png") center right /  80% auto no-repeat;
+}
+
+.hero .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.hero__content {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.hero .eyebrow {
+  display: block;
+  font-family: var(--font-label);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  color: var(--blue-100);
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  max-width: 520px;
+  margin-bottom: 28px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.25;
+}
+
+.hero h1 span {
+  color: var(--yellow);
+}
+
+/* Serviços */
+.services {
+  padding: 56px 0 64px;
+  background: var(--white);
+}
+
+.services h2 {
+  margin-bottom: 32px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 20px 18px;
+  background: var(--blue-100);
+  border-radius: var(--radius);
+}
+
+.card__icon {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--blue-900);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--blue-800);
+}
+
+.card p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+/*  Sobre nós  */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: var(--white);
+}
+
+.about__image img {
+  height: 100%;
+  display: block;
+  max-width: 95%;
+}
+
+/*Sobre nés e Artigos*/
+
+.caixa {
+  margin: 24px 16px;
+  padding: 24px;
+  background: var(--blue-100);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.caixa h3 {
+  margin-bottom: 8px;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--blue-800);
+}
+
+.caixa p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/*  Blog (faixa azul)  */
+.blog {
+  width: 100%;
+  padding: 40px 0;
+  background-color: var(--blue-900);
+  color: var(--white);
+}
+
+/*Orçamento*/
+.quote {
+  --q-bg: #ffffff;
+  --q-navy: #0f1b3d;
+  --q-blue: #2f5fa8;
+  --q-card: #e9eef8;
+  --q-field: #d9d9d9;
+  --q-yellow: #f5d84a;
+  --q-text: #1d1d1f;
+
+  background: var(--q-bg);
+  padding: 48px 0;
+}
+
+.quote .container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+.quote__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.quote__intro .section-label {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--q-blue);
+  margin-bottom: 14px;
+}
+
+.form {
+  background: var(--q-card);
+  border-radius: 14px;
+  padding: 26px 30px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--q-navy);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 0.78rem;
+  color: var(--q-text);
+  background: var(--q-field);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 0 12px;
+  height: 36px;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.field textarea {
+  height: auto;
+  min-height: 90px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.field textarea::placeholder {
+  color: #8a8a8a;
+}
+
+/*  Rodapé (faixa azul)  */
+.footer {
+  width: 100%;
+  padding: 24px 0;
+  background-color: var(--blue-900);
+  color: var(--white);
+}

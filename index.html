@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MKDigital | Agência de Marketing Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--HEADER + HERO  -->
+  <header class="hero" id="inicio">
+    <div class="container nav">
+      <a href="#inicio" class="logo">MK<span>DIGITAL</span></a>
+      <nav class="menu">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#blog">Blog</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+
+    <div class="hero__content">
+      <span class="eyebrow">Estratégia . Criatividade . Resultados</span>
+      <h1>Sua marca mais forte <span>no digital.</span></h1>
+      <a href="#contato" class="btn">Solicitar orçamento →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SERVIÇOS -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <span class="section-label">Nossos serviços</span>
+        <h2>Soluções completas para o seu negócio.</h2>
+
+        <div class="services__grid">
+          <article class="card">
+            <span class="card__icon">🔍</span>
+            <h3>SEO</h3>
+            <p>Melhore o posicionamento da sua marca nos mecanismos de busca e atraia mais clientes qualificados.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">📷</span>
+            <h3>Gestão de redes sociais</h3>
+            <p>Conteúdo estratégico e criativo para aumentar o engajamento e fortalecer sua marca.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">📣</span>
+            <h3>Tráfego pago</h3>
+            <p>Campanhas otimizadas para o público certo e gerar mais conversões.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">💻</span>
+            <h3>Criação de sites</h3>
+            <p>Sites modernos, responsivos e personalizados para o seu negócio.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">📊</span>
+            <h3>Outros serviços</h3>
+            <p>Branding, e-mail, marketing, produção de conteúdo e consultoria digital.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--  SOBRE NÓS-->
+    <section class="about" id="sobre">
+      <div class="about__image">
+        <img src="imagens/renata.png" alt="Renata, fundadora da MKDigital">
+      </div>
+      <div class="about__content">
+        <span class="section-label">Sobre nós</span>
+        <h2>Marketing pensado para destacar sua marca.</h2>
+        <p>Meu nome é Renata sou fundadora da MKDigital, uma agência de marketing digital que está no mercado desde 2018. Nós ajudamos pequenas e médias empresas a expandirem sua presença online através de estratégias de SEO, gestão de redes sociais, campanhas de anúncios pagos, entre outros serviços.</p>
+        <p>O diferencial da nossa agência é o trabalho personalizado que realizamos com cada cliente, focando em suas necessidades e criando estratégias únicas para aumentar as conversões.</p>
+        <a href="sobrenos.html" class="btn">Conheça mais sobre nós →</a>
+      </div>
+    </section>
+
+    <!--  BLOG  -->
+    <section class="blog" id="blog">
+      <div class="container blog__grid">
+        <div class="blog__intro">
+          <span class="section-label">Nosso Blog</span>
+          <h2>Conteúdo que gera conhecimento e resultados</h2>
+          <p>Dicas, estratégias e novidades do mundo do marketing digital para você aplicar no seu negócio</p>
+          <a href="artigos.html" class="btn">Ver todos os artigos →</a>
+        </div>
+
+        <div class="blog__posts">
+          <article class="post">
+            <img src="imagens/blog1.png" alt="Imagem de um coala mechendo com tecnologia">
+            <div class="post__body">
+              <h3>Tendências de Marketing Digital: a inovação a serviço do negócio</h3>
+              <time datetime="2018-07-19">julho 19, 2018</time>
+            </div>
+          </article>
+          <article class="post">
+            <img src="imagens/blog2.webp" alt="Pessoa mechendo em uma 'projeção' de um aparelho eletronico">
+            <div class="post__body">
+              <h3>A relevância das estratégias do marketing digital para as organizações contemporâneas</h3>
+              <time datetime="2025-04-22">abril 22, 2025</time>
+            </div>
+          </article>
+          <article class="post">
+            <img src="imagens/blog3.jpg" alt="Quadro cheio de post it com o nomeme marketing no centro">
+            <div class="post__body">
+              <h3>Por que o Plano de Marketing é o Segredo das Pequenas e Médias Empresas que Mais Crescem</h3>
+              <time datetime="2025-10-10">outubro 10, 2025</time>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORÇAMENTO  -->
+    <section class="quote" id="contato">
+      <div class="container quote__grid">
+        <div class="quote__intro">
+          <span class="section-label">Solicite seu orçamento</span>
+          <h2>Transforme sua ideia em resultados.</h2>
+          <p>Preencha o formulário ao lado e conte pra gente sobre o seu negócio. Nossa equipe entrará em contato o mais breve possível.</p>
+          <ul class="benefits">
+            <li><span>👥</span> Atendimento personalizado</li>
+            <li><span>🛡️</span> Resposta rápida</li>
+            <li><span>🤝</span> Trabalho em equipe</li>
+          </ul>
+        </div>
+
+        <form class="form" action="#" method="post">
+          <div class="field">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="empresa">Nome da empresa *</label>
+            <input type="text" id="empresa" name="empresa" required>
+          </div>
+          <div class="field">
+            <label for="servico">Qual serviço você precisa ? *</label>
+            <select id="servico" name="servico" required>
+              <option value="" disabled selected>Selecione</option>
+              <option>SEO</option>
+              <option>Gestão de redes sociais</option>
+              <option>Tráfego pago</option>
+              <option>Criação de sites</option>
+              <option>Outros serviços</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="projeto">Conte um pouco sobre o seu projeto *</label>
+            <textarea id="projeto" name="projeto" rows="4" placeholder="Ex: Quero melhorar o engajamento das minhas redes sociais ..." required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar solicitação →</button>
+        </form>
+      </div>
+    </section>
+
+    <!--  DEPOIMENTOS  -->
+    <section class="testimonials">
+      <div class="container">
+        <span class="section-label">O que nossos clientes dizem</span>
+        <h2>Resultados que falam por si.</h2>
+
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <span class="testimonial__mark">“</span>
+            <p>A MKdigital nos ajudou a aumentar em 3x o nosso faturamento online. O trabalho é realmente personalizado e atencioso!</p>
+            <footer class="testimonial__author">
+              <img src="images/cliente1.jpg" alt="">
+              <div><strong>Kailane Ribeiro</strong><span>Dona da Bela Vista Cosmetics</span></div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <span class="testimonial__mark">“</span>
+            <p>Profissionais incríveis! O suporte é sempre muito rápido e as estratégias fazem toda a diferença no nosso negócio.</p>
+            <footer class="testimonial__author">
+              <img src="images/cliente2.jpg" alt="">
+              <div><strong>Marileide Santos</strong><span>CEO da Tech Solutions</span></div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <span class="testimonial__mark">“</span>
+            <p>Recomendo de olhos fechados! A MKDigital entende o que o cliente precisa e entrega muito mais do que promete.</p>
+            <footer class="testimonial__author">
+              <img src="images/cliente3.jpg" alt="">
+              <div><strong>Isabelle Vitória</strong><span>Proprietária da Casa e Estilo</span></div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--  FOOTER  -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#inicio" class="logo">MK<span>DIGITAL</span></a>
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#blog">Blog</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Facebook">f</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
